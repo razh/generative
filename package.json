@@ -1,0 +1,36 @@
+{
+  "name": "generative",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razh/generative.git"
+  },
+  "author": "razh",
+  "private": true,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razh/generative/issues"
+  },
+  "homepage": "https://github.com/razh/generative#readme",
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browser-sync": "^2.9.11",
+    "browserify": "^11.2.0",
+    "del": "^2.0.2",
+    "glslify": "^2.3.1",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0"
+  },
+  "dependencies": {
+    "three.js": "^0.73.0"
+  }
+}
