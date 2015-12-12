@@ -10,6 +10,7 @@ const babelify = require('babelify');
 const brfs = require( 'brfs' );
 const browserify = require('browserify');
 const browserSync = require('browser-sync').create();
+const glslify = require('glslify');
 const del = require('del');
 const runSequence = require('run-sequence');
 const source = require('vinyl-source-stream');
@@ -41,7 +42,8 @@ gulp.task('js', () => {
 
   bundler
     .transform(babelify)
-    .transform(brfs);
+    .transform(brfs)
+    .transform(glslify);
 
   function rebundle() {
     return bundler.bundle()
