@@ -1,4 +1,4 @@
-// Port of https://github.com/increpare/bfxr
+// Modified version of https://github.com/mneubrand/jsfxr
 
 /**
  *
@@ -38,34 +38,23 @@ const defaults = {
   vibratoDepth: 0,
   vibratoSpeed: 0,
 
-  overtones: 0,
-  overtoneFallof: 0,
-
-  changeRepeat: 0,
-
   changeAmount: 0,
   changeSpeed: 0,
-
-  changeAmount2: 0,
-  changeSpeed2: 0,
 
   squareDuty: 0,
   dutySweep: 0,
 
   repeatSpeed: 0,
 
-  flangerOffset: 0,
-  flangerSweep: 0,
+  phaserOffset: 0,
+  phaserSweep: 0,
 
   lpFilterCutoff: 1,
   lpFilterCutoffSweep: 0,
   lpFilterResonance: 0,
 
   hpFilterCutoff: 0,
-  hpFilterCutoffSweep: 0,
-
-  bitCrush: 0,
-  bitCrushSweep: 0
+  hpFilterCutoffSweep: 0
 };
 
 export default class Synth {
